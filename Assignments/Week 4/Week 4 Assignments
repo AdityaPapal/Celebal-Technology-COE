@@ -1,0 +1,58 @@
+Week 4 Assignments
+===============================
+1. Applying Bayes' Theorem in Medical Diagnosis
+
+Bayes' Theorem is used to find the probability of an event based on prior knowledge of
+conditions related to the event. It is given by:
+
+				 P(B∣A)⋅P(A)
+		P(A∣B) =	------------
+		           P(B)
+
+
+Let's consider a medical diagnosis problem where:
+
+𝐴: A is the event of having a disease.
+𝐵: B is the event of testing positive for the disease.
+
+Given:
+	P(A) = Prior probability of having the disease.
+	P(B∣A) = Probability of testing positive given having the disease (sensitivity).
+	P(B∣¬A) = Probability of testing positive given not having the disease 
+				(false positive rate)
+    P(¬A)=1−P(A) = Probability of not having the disease.
+
+    Using Bayes' Theorem, we calculate the posterior probability 𝑃(𝐴∣𝐵) 
+    (the probability of having the disease given a positive test result):
+
+
+    			         P(B∣A)⋅P(A)
+    	P(A∣B)= ---------------------------
+    	         P(B∣A)⋅P(A)+P(B∣¬A)⋅P(¬A)
+
+Example: 
+		
+		P(A)=0.01 (1% prevalence of the disease).
+		P(B∣A)=0.99 (99% sensitivity).
+		P(B∣¬A)=0.05 (5% false positive rate).
+
+
+		           0.99⋅0.01                  0.0099				0.0099
+    P(A∣B)=  ------------------------  = ------------------- = --------- ≈ 0.1667 
+	           0.99⋅0.01 + 0.05⋅0.99       0.0099 + 0.0495       0.0594
+
+So, the probability of having the disease given a positive test result is approximately 16.67%.
+
+
+2. Finding Eigenvalues and Eigenvectors of a Given Matrix
+
+For a matrix A, the eigenvalues λ and eigenvectors 𝑣 satisfy the equation:
+Av=λv
+
+This can be written as:
+(A−λI)v=01
+
+where,
+I is the identity matrix. To find the eigenvalues, solve the characteristic equation:
+det(A−λI)=0
+det(A−λI)=0
