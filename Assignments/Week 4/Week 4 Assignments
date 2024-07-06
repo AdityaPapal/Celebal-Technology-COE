@@ -55,4 +55,3 @@ This can be written as:
 where,
 I is the identity matrix. To find the eigenvalues, solve the characteristic equation:
 det(A−λI)=0
-det(A−λI)=0
